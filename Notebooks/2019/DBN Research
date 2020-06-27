@@ -1,0 +1,25 @@
+For years, fluctuations in global climate patterns has been influenced by
+atmospheric teleconnection patterns. These atmospheric teleconnections are related to
+one another at large geographical distances. Although climate variabilities have been
+confirmed to be related to atmospheric teleconnections, what still remains to be
+discovered is the causal relationships between atmospheric variables.
+Thus, this study seeks to discover the causal relationships between these
+variables and how they can be used to identify teleconnection patterns. For this study,
+the Dynamic Bayesian Network (DBN) based approach was applied, where each node
+represents a variable and location while their arcs represents a relationship. Using this
+probabilistic graphical model focused on dynamic systems allows for making inferences
+on the causal relationships between variables.
+To begin, data retrieved from ERA-Interim global atmospheric reanalysis data set
+between 1979 and 2018 was used and recomposed within an empirical orthogonal
+function (EOF). To discover the DBN, a time lag of a fixed amount was imposed on
+each variable. Then, the K2 algorithm was implemented for score-based structure
+learning on the lagged data set. Next, the structure was used to estimate the
+parameters of the learned model which can be used to make inferences.
+After running the data through the K2 algorithm and scoring the connections with
+the Bayesian Information Criterion (BIC) scoring function, it was concluded, from the
+structure of the network, that there exist several causal connections between variables
+at different locations with varying time lags. What remains to be studied is comparing
+this causal approach to other graphical models and their techniques to rate their
+accuracy and efficiency between one another. The findings present causal relationships
+between atmospheric variables which domain experts can utilize to make general
+predictions on teleconnection patterns.
